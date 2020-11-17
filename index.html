@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" media ="all">
+    <link href="css/style.css" rel="stylesheet" media ="all">
+    <title>Identity Stealer</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Identity Stealing Form</h1>
+        <p id="description">This form will steal your identity</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type ="text" name="name" placeholder="Legal Name" required>
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="Email Address" required>
+            <label for="date-of-birth" id="dob-label">Date of Birth</label>
+            <input type="date" name="date-of-birth" required>
+            <label for="social-security-number" id="number-label">Social Security Number</label>
+            <input id="number" type="number" min="111111111" max="999999999" placeholder="111-11-111">
+            <label for="consent">Do you consent to your identity being stolen?</label>
+                <select id="dropdown">
+                    <option value="" disabled selected hidden>---</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                    <option>Maybe?</option>
+                </select>
+            <label for="credit">How much credit do you currently have available?</label>
+                <label class="radio-label">
+                    <input type="radio" name="credit" value="low"> $1-$5,000
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="credit" value="med"> $5,001-$10,000
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="credit" value="high"> $10,001+
+                </label>
+            <label for="assets">Which assets could the government seize from you to repay debts?</label>
+                <label for="assets-" class="check-label">
+                    <input type="checkbox" id="asset1" name="asset1" value="car"> Car
+                </label>
+                <label for="assets-" class="check-label">
+                <input type="checkbox" id="asset2" name="asset2" value="house"> House
+                </label>
+                <label for="assets-" class="check-label">
+                    <input type="checkbox" id="asset3" name="asset3" value="boat"> Boat
+                </label>
+                <label for="assets-" class="check-label">
+                    <input type="checkbox" id="asset4" name="asset4" value="retirement-account"> Retirement Account
+                </label>
+            <label for="comments">Additional Information</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please mention any other valuable items that you may have in your possession"></textarea>
+            <button id="submit">Steal My Identity</button>
+        </form>
+    </main>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
